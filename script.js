@@ -1,7 +1,7 @@
 // Write your JavaScript code here!
 
 const { formSubmission, addDestinationInfo } = require("./scriptHelper");
-
+//on submit, call form submit, event.preventDefault()
 window.addEventListener("load", function() {
     let form = document.querySelector("form");
     form.addEventListener("submit", function(event) {
@@ -10,8 +10,8 @@ window.addEventListener("load", function() {
         let copilotName = document.querySelector("input[name=copilotName");
         let fuelStatus = document.querySelector("input[name=fuelLevel");
         let cargoStatus = document.querySelector("input[name=cargoMass]");
-        formSubmission(document, list, pilotName.value, copilotName.value, fuelStatus.value, cargoStatus.value);
-        event.preventDefault();
+        event.preventDefault().formSubmission(document, list, pilotName.value, copilotName.value, fuelStatus.value, cargoStatus.value);
+        
     });
     let listedPlanets;
     // Set listedPlanetsResponse equal to the value returned by calling myFetch()
