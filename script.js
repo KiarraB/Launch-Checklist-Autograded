@@ -1,6 +1,6 @@
 // Write your JavaScript code here!
 
-const { formSubmission, addDestinationInfo } = require("./scriptHelper");
+//const { formSubmission, addDestinationInfo } = require("./scriptHelper");
 //on submit, call form submit, event.preventDefault()
 window.addEventListener("load", function() {
     let form = document.querySelector("form");
@@ -10,7 +10,8 @@ window.addEventListener("load", function() {
         let copilotName = document.querySelector("input[name=copilotName");
         let fuelStatus = document.querySelector("input[name=fuelLevel");
         let cargoStatus = document.querySelector("input[name=cargoMass]");
-        event.preventDefault().formSubmission(document, list, pilotName.value, copilotName.value, fuelStatus.value, cargoStatus.value);
+        event.preventDefault();
+        formSubmission(document, list, pilotName.value, copilotName.value, fuelStatus.value, cargoStatus.value);
         
     });
     let listedPlanets;
