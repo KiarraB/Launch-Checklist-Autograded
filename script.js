@@ -1,6 +1,6 @@
 // Write your JavaScript code here!
 
-const { formSubmission, addDestinationInfo } = require("./scriptHelper");
+//const { formSubmission, addDestinationInfo } = require("./scriptHelper");
 //on submit, call form submit, event.preventDefault()
 window.addEventListener("load", function() {
     let form = document.querySelector("form");
